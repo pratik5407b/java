@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AgeInputServlet</servlet-name>
+        <servlet-class>classes.AgeInputServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SaveUserServlet</servlet-name>
+        <servlet-class>classes.SaveUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayUserServlet</servlet-name>
+        <servlet-class>classes.DisplayUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AgeInputServlet</servlet-name>
+        <url-pattern>/AgeInputServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SaveUserServlet</servlet-name>
+        <url-pattern>/SaveUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayUserServlet</servlet-name>
+        <url-pattern>/DisplayUserServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
